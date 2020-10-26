@@ -6,7 +6,7 @@ An example for a service created with flask which controls connections to a reso
 
 1. Make sure you have Docker Desktop installed by running the command `docker --version` in the terminal. 
    not receiving the version back means Docker is not installed.
-   Get it here: https://www.docker.com/products/docker-desktop 
+   [Get it here] (https://www.docker.com/products/docker-desktop)
 
 2. Clone the repository using HTTP:
 `git clone https://github.com/omrigee/flask-demo-service.git`
@@ -16,8 +16,11 @@ download the files from:
 
 3. Go to repository directory
    `cd flask-demo-service`
+   
+4. Build the docker container with the following command:
+   `docker build --tag demo . `
 
-4. Enter the following command:
+5. Enter the following command to run the container:
    `docker run -i -t -p 7800:5000 flask-demo-service`.
   This command will start the service on port 7800.
     
@@ -30,21 +33,20 @@ download the files from:
   Once your'e done installing and initiallizing the service as explained in the previous section, you can use it. 
 
   To *receive* a resource, go to: 
-  http://localhost:7800/users/ip
+  `http://localhost:7800/users/ip`
 
   for example, going to 
-  http://localhost:7800/users/127.0.5.6
+  `http://localhost:7800/users/127.0.5.6`
   returns resource username and password, and locks him. 
 
   
   To *release* a resource, send the following POST HTTP request to
-   http://localhost:7800/users/ 
+   `http://localhost:7800/users/ ` - 
    
-   :
-
    {
     “Ip”:127.0.5.1”
    }
+   `
 
    in example, will release the 127.0.5.1 resource.
 
