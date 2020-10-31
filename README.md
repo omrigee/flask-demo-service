@@ -6,7 +6,7 @@ An example for a service created with flask which controls connections to a reso
 
 1. Make sure you have Docker Desktop installed by running the command `docker --version` in the terminal. 
    not receiving the version back means Docker is not installed.
-   [Get it here] (https://www.docker.com/products/docker-desktop)
+   [Get it here](https://www.docker.com/products/docker-desktop)
 
 2. Clone the repository using HTTP:
 `git clone https://github.com/omrigee/flask-demo-service.git`
