@@ -18,7 +18,7 @@ download the files from:
    `cd flask-demo-service`
    
 4. Build the docker container with the following command:
-   `docker build --tag demo . `
+   `docker build --tag flask-demo-service . `
 
 5. Enter the following command to run the container:
    `docker run -i -t -p 7800:5000 flask-demo-service`.
